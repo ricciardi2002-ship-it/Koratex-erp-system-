@@ -12,188 +12,142 @@
 <meta property="og:locale" content="es_VE">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="nav">
-  <div class="nav-inner">
-    <a href="index.html" class="brand">
-      <span class="brand-mark"></span>
-      <span class="brand-word">KORATEX</span>
-      <span class="brand-sub">Mortero Seco, C.A.</span>
-    </a>
-    <nav class="nav-links" id="navLinks">
-      <a href="index.html" class="">Inicio</a>
-      <a href="productos.html" class="active">Productos</a>
-      <a href="nosotros.html" class="">Nosotros</a>
-      <a href="contacto.html" class="">Contacto</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="./index.html" class="logo"><svg class="logo-mark" viewBox="0 0 100 100" role="img" aria-label="Isotipo KORATEX"><rect width="100" height="100" rx="24" fill="#141412"/><path d="M22 78 L46 22" stroke="#E4362B" stroke-width="13" stroke-linecap="round"/><path d="M54 22 L78 78" stroke="#1E5631" stroke-width="13" stroke-linecap="round"/><path d="M22 78 L78 78" stroke="#F6F3EE" stroke-width="9" stroke-linecap="round"/></svg><span class="logo-text">KORA<span>TEX</span> <small>MORTERO SECO, C.A.</small></span></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="./index.html" class="">Inicio</a>
+      <a href="./productos.html" class="active">Productos</a>
+      <a href="./nosotros.html" class="">Nosotros</a>
+      <a href="./contacto.html" class="">Contacto</a>
     </nav>
-    <a href="contacto.html" class="nav-cta">Cotizar →</a>
-    <button class="nav-burger" id="navBurger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
   </div>
 </header>
+<div class="trowel-divider thin"></div>
 
-<section class="p-hero grid-bg">
+<section class="ficha-hero">
   <div class="wrap">
     <span class="eyebrow">Catálogo 2026</span>
-    <h1 style="margin-top:12px;">Productos</h1>
-    <p style="max-width:600px; color:#C7C9D1; margin-top:16px;">Ocho soluciones técnicas para cada etapa de la obra: desde el pegado de bloques hasta el acabado final e impermeabilización.</p>
+    <h1>Productos</h1>
+    <p style="max-width:600px; color:#C9C6BD; margin-top:16px;">Ocho soluciones técnicas para cada etapa de la obra: desde el pegado de bloques hasta el acabado final e impermeabilización.</p>
   </div>
 </section>
-<section class="section-tight">
+<section class="section-hueso">
   <div class="wrap">
     <div class="filtros" id="filtros">
       <button class="filtro-btn active" data-cat="todos">Todos</button>
       <button class="filtro-btn" data-cat="adhesivos">Adhesivos</button>
-      <button class="filtro-btn" data-cat="estucos">Estucos y Frisos</button>
-      <button class="filtro-btn" data-cat="acabados">Carateo y Acabados</button>
-      <button class="filtro-btn" data-cat="pinturas">Pinturas Koracolor</button>
-      <button class="filtro-btn" data-cat="impermeabilizantes">Impermeabilizantes</button>
+<button class="filtro-btn" data-cat="estucos">Estucos y Frisos</button>
+<button class="filtro-btn" data-cat="acabados">Carateo y Acabados</button>
+<button class="filtro-btn" data-cat="pinturas">Pinturas Koracolor</button>
+<button class="filtro-btn" data-cat="impermeabilizantes">Impermeabilizantes</button>
     </div>
-    <div class="p-grid" id="productGrid">
-      <a href="productos/mortero-adhesivo-c2.html" class="p-card reveal" data-cat="adhesivos">
-        <div class="p-card-top">
-          <div class="p-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7.5" height="7.5"/><rect x="13.5" y="3" width="7.5" height="7.5"/><rect x="3" y="13.5" width="7.5" height="7.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5"/></svg></div>
-          <span class="p-index">01</span>
-        </div>
-        <div>
-          <span class="p-line">Línea Mortero Adhesivo</span>
+    <div class="grid-3" id="productGrid">
+      
+      <a href="./productos/mortero-adhesivo-c2.html" class="product-card reveal">
+        <div class="thumb"><div class="thumb-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7.5" height="7.5"/><rect x="13.5" y="3" width="7.5" height="7.5"/><rect x="3" y="13.5" width="7.5" height="7.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5"/><path d="M2 12h20M12 2v20" stroke-opacity=".4"/></svg></div><span class="thumb-label">Mortero Adhesivo C2</span></div>
+        <div class="body">
+          <span class="linea">Línea Mortero Adhesivo</span>
           <h3>Mortero Adhesivo C2</h3>
           <p>Adhesivo cementicio C2 · Alta resistencia</p>
-        </div>
-        <div class="p-card-foot">
-          <span>Ver ficha técnica</span>
-          <span class="p-arrow">→</span>
+          <span class="ver-mas">Ver ficha técnica →</span>
         </div>
       </a>
-      <a href="productos/estuco-koratex.html" class="p-card reveal" data-cat="estucos">
-        <div class="p-card-top">
-          <div class="p-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="12" height="8" rx="1"/><path d="M15 6.5h4.5a1.5 1.5 0 0 1 1.5 1.5v0a1.5 1.5 0 0 1-1.5 1.5H15"/><path d="M9 12v8M5 20h8"/></svg></div>
-          <span class="p-index">02</span>
-        </div>
-        <div>
-          <span class="p-line">Línea Estucos</span>
+
+      <a href="./productos/estuco-koratex.html" class="product-card reveal">
+        <div class="thumb"><div class="thumb-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="12" height="8" rx="1"/><path d="M15 6.5h4.5a1.5 1.5 0 0 1 1.5 1.5v0a1.5 1.5 0 0 1-1.5 1.5H15"/><path d="M9 12v8M5 20h8"/></svg></div><span class="thumb-label">Estuco Koratex</span></div>
+        <div class="body">
+          <span class="linea">Línea Estucos</span>
           <h3>Estuco Koratex</h3>
           <p>Mortero de acabado para paredes</p>
-        </div>
-        <div class="p-card-foot">
-          <span>Ver ficha técnica</span>
-          <span class="p-arrow">→</span>
+          <span class="ver-mas">Ver ficha técnica →</span>
         </div>
       </a>
-      <a href="productos/estuco-constructor.html" class="p-card reveal" data-cat="estucos">
-        <div class="p-card-top">
-          <div class="p-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="12" height="8" rx="1"/><path d="M15 6.5h4.5a1.5 1.5 0 0 1 1.5 1.5v0a1.5 1.5 0 0 1-1.5 1.5H15"/><path d="M9 12v8M5 20h8"/></svg></div>
-          <span class="p-index">03</span>
-        </div>
-        <div>
-          <span class="p-line">Línea Estucos</span>
+
+      <a href="./productos/estuco-constructor.html" class="product-card reveal">
+        <div class="thumb"><div class="thumb-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="12" height="8" rx="1"/><path d="M15 6.5h4.5a1.5 1.5 0 0 1 1.5 1.5v0a1.5 1.5 0 0 1-1.5 1.5H15"/><path d="M9 12v8M5 20h8"/></svg></div><span class="thumb-label">Estuco Constructor Koratex</span></div>
+        <div class="body">
+          <span class="linea">Línea Estucos</span>
           <h3>Estuco Constructor Koratex</h3>
           <p>Mortero de acabado para paredes</p>
-        </div>
-        <div class="p-card-foot">
-          <span>Ver ficha técnica</span>
-          <span class="p-arrow">→</span>
+          <span class="ver-mas">Ver ficha técnica →</span>
         </div>
       </a>
-      <a href="productos/carateo-koratex.html" class="p-card reveal" data-cat="acabados">
-        <div class="p-card-top">
-          <div class="p-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 15 5l4 4L7 21H3z"/><path d="M12 8l4 4M2 22h5"/></svg></div>
-          <span class="p-index">04</span>
-        </div>
-        <div>
-          <span class="p-line">Línea Carateo · Acabados</span>
+
+      <a href="./productos/carateo-koratex.html" class="product-card reveal">
+        <div class="thumb"><div class="thumb-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 15 5l4 4L7 21H3z"/><path d="M12 8l4 4M2 22h5"/></svg></div><span class="thumb-label">Carateo Koratex</span></div>
+        <div class="body">
+          <span class="linea">Línea Carateo · Acabados</span>
           <h3>Carateo Koratex</h3>
           <p>Relleno de juntas · Interiores y exteriores</p>
-        </div>
-        <div class="p-card-foot">
-          <span>Ver ficha técnica</span>
-          <span class="p-arrow">→</span>
+          <span class="ver-mas">Ver ficha técnica →</span>
         </div>
       </a>
-      <a href="productos/friso-pre-listo.html" class="p-card reveal" data-cat="estucos">
-        <div class="p-card-top">
-          <div class="p-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="12" height="8" rx="1"/><path d="M15 6.5h4.5a1.5 1.5 0 0 1 1.5 1.5v0a1.5 1.5 0 0 1-1.5 1.5H15"/><path d="M9 12v8M5 20h8"/></svg></div>
-          <span class="p-index">05</span>
-        </div>
-        <div>
-          <span class="p-line">Línea Estucos</span>
+
+      <a href="./productos/friso-pre-listo.html" class="product-card reveal">
+        <div class="thumb"><div class="thumb-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="12" height="8" rx="1"/><path d="M15 6.5h4.5a1.5 1.5 0 0 1 1.5 1.5v0a1.5 1.5 0 0 1-1.5 1.5H15"/><path d="M9 12v8M5 20h8"/></svg></div><span class="thumb-label">Friso Pre Listo Koratex</span></div>
+        <div class="body">
+          <span class="linea">Línea Estucos</span>
           <h3>Friso Pre Listo Koratex</h3>
           <p>Mortero de acabado para paredes</p>
-        </div>
-        <div class="p-card-foot">
-          <span>Ver ficha técnica</span>
-          <span class="p-arrow">→</span>
+          <span class="ver-mas">Ver ficha técnica →</span>
         </div>
       </a>
-      <a href="productos/mate-koracolor.html" class="p-card reveal" data-cat="pinturas">
-        <div class="p-card-top">
-          <div class="p-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="11" height="6" rx="1"/><path d="M9 10v3.5a2 2 0 0 0 2 2h0"/><path d="M11 15.5V21"/><path d="M8.3 21h5.4a1 1 0 0 0 1-1.15l-.7-4.85H8l-.7 4.85A1 1 0 0 0 8.3 21Z"/></svg></div>
-          <span class="p-index">06</span>
-        </div>
-        <div>
-          <span class="p-line">Línea Pinturas · Koracolor</span>
+
+      <a href="./productos/mate-koracolor.html" class="product-card reveal">
+        <div class="thumb"><div class="thumb-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="11" height="6" rx="1"/><path d="M9 10v3.5a2 2 0 0 0 2 2h0"/><path d="M11 15.5V21"/><path d="M8.3 21h5.4a1 1 0 0 0 1-1.15l-.7-4.85H8l-.7 4.85A1 1 0 0 0 8.3 21Z"/></svg></div><span class="thumb-label">Mate Koracolor</span></div>
+        <div class="body">
+          <span class="linea">Línea Pinturas · Koracolor</span>
           <h3>Mate Koracolor</h3>
           <p>Pintura acrílica mate · Tipo C</p>
-        </div>
-        <div class="p-card-foot">
-          <span>Ver ficha técnica</span>
-          <span class="p-arrow">→</span>
+          <span class="ver-mas">Ver ficha técnica →</span>
         </div>
       </a>
-      <a href="productos/supra-koracolor.html" class="p-card reveal" data-cat="pinturas">
-        <div class="p-card-top">
-          <div class="p-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="11" height="6" rx="1"/><path d="M9 10v3.5a2 2 0 0 0 2 2h0"/><path d="M11 15.5V21"/><path d="M8.3 21h5.4a1 1 0 0 0 1-1.15l-.7-4.85H8l-.7 4.85A1 1 0 0 0 8.3 21Z"/></svg></div>
-          <span class="p-index">07</span>
-        </div>
-        <div>
-          <span class="p-line">Línea Pinturas · Koracolor</span>
+
+      <a href="./productos/supra-koracolor.html" class="product-card reveal">
+        <div class="thumb"><div class="thumb-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="11" height="6" rx="1"/><path d="M9 10v3.5a2 2 0 0 0 2 2h0"/><path d="M11 15.5V21"/><path d="M8.3 21h5.4a1 1 0 0 0 1-1.15l-.7-4.85H8l-.7 4.85A1 1 0 0 0 8.3 21Z"/></svg></div><span class="thumb-label">Supra+ Koracolor</span></div>
+        <div class="body">
+          <span class="linea">Línea Pinturas · Koracolor</span>
           <h3>Supra+ Koracolor</h3>
           <p>Pintura acrílica premium · Tipo A</p>
-        </div>
-        <div class="p-card-foot">
-          <span>Ver ficha técnica</span>
-          <span class="p-arrow">→</span>
+          <span class="ver-mas">Ver ficha técnica →</span>
         </div>
       </a>
-      <a href="productos/ama-flex.html" class="p-card reveal" data-cat="impermeabilizantes">
-        <div class="p-card-top">
-          <div class="p-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 7.2 6 11.5A6 6 0 0 1 6 14.5C6 10.2 12 3 12 3Z"/><path d="M9.5 14.2a2.5 2.5 0 0 0 2.5 2.5"/></svg></div>
-          <span class="p-index">08</span>
-        </div>
-        <div>
-          <span class="p-line">Línea Impermeabilizantes · Amalgol® x Koratex®</span>
+
+      <a href="./productos/ama-flex.html" class="product-card reveal">
+        <div class="thumb"><div class="thumb-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 7.2 6 11.5A6 6 0 0 1 6 14.5C6 10.2 12 3 12 3Z"/><path d="M9.5 14.2a2.5 2.5 0 0 0 2.5 2.5"/></svg></div><span class="thumb-label">Ama-Flex</span></div>
+        <div class="body">
+          <span class="linea">Línea Impermeabilizantes · Amalgol® x Koratex®</span>
           <h3>Ama-Flex</h3>
           <p>Pintura impermeabilizante acrílica elástica</p>
-        </div>
-        <div class="p-card-foot">
-          <span>Ver ficha técnica</span>
-          <span class="p-arrow">→</span>
+          <span class="ver-mas">Ver ficha técnica →</span>
         </div>
       </a>
     </div>
   </div>
 </section>
 
-<footer class="footer">
+<footer class="site-footer">
   <div class="wrap">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <a href="index.html" class="brand">
-          <span class="brand-mark"></span>
-          <span class="brand-word">KORATEX</span>
-        </a>
-        <p>Desarrollamos y producimos soluciones tecnológicas de alto rendimiento para la construcción. Construimos con calidad, respaldamos con compromiso.</p>
+    <div class="foot-grid">
+      <div>
+        <div class="logo"><svg class="logo-mark" viewBox="0 0 100 100" role="img" aria-label="Isotipo KORATEX"><rect width="100" height="100" rx="24" fill="#141412"/><path d="M22 78 L46 22" stroke="#E4362B" stroke-width="13" stroke-linecap="round"/><path d="M54 22 L78 78" stroke="#1E5631" stroke-width="13" stroke-linecap="round"/><path d="M22 78 L78 78" stroke="#F6F3EE" stroke-width="9" stroke-linecap="round"/></svg><span class="logo-text">KORA<span>TEX</span></span></div>
+        <p class="tagline">Desarrollamos y producimos soluciones tecnológicas de alto rendimiento para la construcción. Construimos con calidad, respaldamos con compromiso.</p>
       </div>
       <div>
         <h4>Navegación</h4>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="productos.html">Productos</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./productos.html">Productos</a></li>
+          <li><a href="./nosotros.html">Nosotros</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
         </ul>
       </div>
       <div>
@@ -202,16 +156,11 @@
           <li>(0244) 334.33.23 · 334.36.43</li>
           <li>ventas@koratexmorteroseco.com</li>
           <li>koratexmorteroseco.com</li>
-        </ul>
-      </div>
-      <div>
-        <h4>Síguenos</h4>
-        <ul>
           <li>Instagram @koratexve</li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
+    <div class="bottom">
       <span>Hecho en Venezuela · Para obras que perduran</span>
       <span>© 2026 KORATEX — Mortero Seco, C.A. · J-30805882-3</span>
     </div>

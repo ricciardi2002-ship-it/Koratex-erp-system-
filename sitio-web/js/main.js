@@ -1,9 +1,9 @@
 // Menú móvil
 (function () {
-  const burger = document.getElementById("navBurger");
-  const links = document.getElementById("navLinks");
-  if (burger && links) {
-    burger.addEventListener("click", () => links.classList.toggle("open"));
+  const toggle = document.getElementById("navToggle");
+  const nav = document.getElementById("mainNav");
+  if (toggle && nav) {
+    toggle.addEventListener("click", () => nav.classList.toggle("open"));
   }
 })();
 
@@ -13,7 +13,18 @@
   const grid = document.getElementById("productGrid");
   if (!filtros || !grid) return;
 
-  const cards = Array.from(grid.querySelectorAll(".p-card"));
+  const cats = {
+    "mortero-adhesivo-c2": "adhesivos",
+    "estuco-koratex": "estucos",
+    "estuco-constructor": "estucos",
+    "carateo-koratex": "acabados",
+    "friso-pre-listo": "estucos",
+    "mate-koracolor": "pinturas",
+    "supra-koracolor": "pinturas",
+    "ama-flex": "impermeabilizantes"
+  };
+
+  const cards = Array.from(grid.querySelectorAll(".product-card"));
 
   filtros.addEventListener("click", (e) => {
     const btn = e.target.closest(".filtro-btn");
@@ -23,7 +34,8 @@
     const cat = btn.dataset.cat;
 
     cards.forEach(card => {
-      const cardCat = card.dataset.cat;
+      const slug = card.getAttribute("href").split("/").pop().replace(".html", "");
+      const cardCat = cats[slug];
       card.style.display = (cat === "todos" || cardCat === cat) ? "" : "none";
     });
   });
