@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://koratexmorteroseco.com/sitemap.xml
