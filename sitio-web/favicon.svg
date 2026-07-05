@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" fill="#141412"/>
-  <path d="M0 44 L44 0 L64 0 L64 20 L20 64 L0 64 Z" fill="#E4362B"/>
-  <path d="M44 64 L64 44 L64 64 Z" fill="#1E5631"/>
-  <text x="32" y="43" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#F6F3EE" text-anchor="middle">K</text>
+  <rect width="64" height="64" fill="#14151A"/>
+  <path d="M8 8h48v24H8z" fill="#E4362B"/>
+  <path d="M8 32h24v24H8z" fill="#E4362B"/>
+  <path d="M32 32h24v24H32z" fill="#1E5631"/>
 </svg>
