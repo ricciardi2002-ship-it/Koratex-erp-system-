@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" fill="#14151A"/>
-  <path d="M8 8h48v24H8z" fill="#E4362B"/>
-  <path d="M8 32h24v24H8z" fill="#E4362B"/>
-  <path d="M32 32h24v24H32z" fill="#1E5631"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Isotipo KORATEX">
+  <rect width="100" height="100" rx="24" fill="#141412"/>
+  <path d="M22 78 L46 22" stroke="#E4362B" stroke-width="13" stroke-linecap="round"/>
+  <path d="M54 22 L78 78" stroke="#1E5631" stroke-width="13" stroke-linecap="round"/>
+  <path d="M22 78 L78 78" stroke="#F6F3EE" stroke-width="9" stroke-linecap="round"/>
 </svg>
