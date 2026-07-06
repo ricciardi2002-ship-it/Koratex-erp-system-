@@ -236,30 +236,43 @@ section { padding: 84px 0; position: relative; overflow: hidden; }
 .hero .lead { margin: 22px auto 0; font-size: 1.1rem; color: var(--gris); max-width: 560px; }
 .hero-actions { margin-top: 32px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
 
-/* -------------------- Promesas -------------------- */
-.promise-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-@media (max-width: 960px) { .promise-grid { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 560px) { .promise-grid { grid-template-columns: 1fr; } }
-.promise-card {
-  background: #fff;
-  border-radius: var(--radius);
-  padding: 32px 26px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(43,42,40,.05);
-  transition: transform .2s ease, box-shadow .2s ease;
-}
-.promise-card:hover { transform: translateY(-6px); box-shadow: 0 16px 36px rgba(43,42,40,.09); }
-.promise-icon {
-  width: 58px; height: 58px;
+/* -------------------- Barra de confianza (compacta) -------------------- */
+.trust-bar { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px 40px; }
+.trust-item { display: flex; align-items: center; gap: 12px; }
+.trust-item .ico {
+  width: 38px; height: 38px;
   border-radius: 50%;
   background: var(--rojo-pastel);
   color: var(--rojo);
   display: flex; align-items: center; justify-content: center;
-  margin: 0 auto 18px;
+  flex-shrink: 0;
 }
-.promise-icon svg { width: 28px; height: 28px; }
-.promise-card h3 { margin-bottom: 8px; font-size: 1.05rem; }
-.promise-card p { font-size: 0.9rem; color: var(--gris); margin: 0; }
+.trust-item .ico svg { width: 18px; height: 18px; }
+.trust-item span:last-child { font-weight: 800; font-size: 0.88rem; color: var(--tinta); }
+
+/* -------------------- Líneas de producto (mosaico compacto) -------------------- */
+.cat-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+@media (max-width: 860px) { .cat-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 560px) { .cat-grid { grid-template-columns: repeat(2, 1fr); } }
+.cat-tile {
+  background: #fff;
+  border-radius: var(--radius-sm);
+  padding: 24px 14px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(43,42,40,.05);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.cat-tile:hover { transform: translateY(-4px); box-shadow: 0 14px 28px rgba(43,42,40,.09); }
+.cat-tile .ico {
+  width: 46px; height: 46px;
+  border-radius: 50%;
+  margin: 0 auto 12px;
+  background: var(--cat-color-bg, var(--rojo-pastel));
+  color: var(--cat-color, var(--rojo));
+  display: flex; align-items: center; justify-content: center;
+}
+.cat-tile .ico svg { width: 22px; height: 22px; }
+.cat-tile span { font-weight: 800; font-size: 0.82rem; color: var(--tinta); }
 
 /* -------------------- Callout / Certificación -------------------- */
 .callout {

@@ -15,16 +15,25 @@
 
   const cards = Array.from(grid.querySelectorAll(".p-card"));
 
-  filtros.addEventListener("click", (e) => {
-    const btn = e.target.closest(".filtro-btn");
-    if (!btn) return;
+  function applyFilter(cat, btn) {
     filtros.querySelectorAll(".filtro-btn").forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
-    const cat = btn.dataset.cat;
-
     cards.forEach(card => {
       const cardCat = card.dataset.cat;
       card.style.display = (cat === "todos" || cardCat === cat) ? "" : "none";
     });
+  }
+
+  filtros.addEventListener("click", (e) => {
+    const btn = e.target.closest(".filtro-btn");
+    if (!btn) return;
+    applyFilter(btn.dataset.cat, btn);
   });
+
+  // Permite enlazar directo a una categoría, ej. productos.html#pinturas
+  const hash = location.hash.replace("#", "");
+  if (hash) {
+    const btn = filtros.querySelector(`[data-cat="${hash}"]`);
+    if (btn) applyFilter(hash, btn);
+  }
 })();
