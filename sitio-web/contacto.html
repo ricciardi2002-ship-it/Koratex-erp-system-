@@ -12,38 +12,44 @@
 <meta property="og:locale" content="es_VE">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="icon" type="image/svg+xml" href="./favicon.svg">
-<link rel="stylesheet" href="css/style.css?v=3">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="css/style.css?v=4">
 </head>
 <body>
-
-<header class="site-header">
-  <div class="wrap">
-    <a href="./index.html" class="logo"><svg class="logo-mark" width="42" height="42" viewBox="0 0 100 100" role="img" aria-label="Isotipo KORATEX"><rect width="100" height="100" rx="24" fill="#141412"/><path d="M22 78 L46 22" stroke="#E4362B" stroke-width="13" stroke-linecap="round"/><path d="M54 22 L78 78" stroke="#1E5631" stroke-width="13" stroke-linecap="round"/><path d="M22 78 L78 78" stroke="#F6F3EE" stroke-width="9" stroke-linecap="round"/></svg><span class="logo-text">KORA<span>TEX</span> <small>MORTERO SECO, C.A.</small></span></a>
-    <nav class="main-nav" id="mainNav">
-      <a href="./index.html" class="">Inicio</a>
-      <a href="./productos.html" class="">Productos</a>
-      <a href="./nosotros.html" class="">Nosotros</a>
-      <a href="./contacto.html" class="active">Contacto</a>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" width="40" height="40" viewBox="0 0 100 100" role="img" aria-label="Isotipo KORATEX"><rect width="100" height="100" rx="26" fill="#141412"/><path d="M22 78 L46 22" stroke="#E4362B" stroke-width="13" stroke-linecap="round"/><path d="M54 22 L78 78" stroke="#1E5631" stroke-width="13" stroke-linecap="round"/><path d="M22 78 L78 78" stroke="#F6F3EE" stroke-width="9" stroke-linecap="round"/></svg>
+      <span>
+        <span class="brand-word">KORATEX</span>
+        <span class="brand-sub">Mortero Seco, C.A.</span>
+      </span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="">Inicio</a>
+      <a href="productos.html" class="">Productos</a>
+      <a href="nosotros.html" class="">Nosotros</a>
+      <a href="contacto.html" class="active">Contacto</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+    <a href="contacto.html" class="nav-cta">Cotizar</a>
+    <button class="nav-burger" id="navBurger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
   </div>
 </header>
-<div class="trowel-divider thin"></div>
 
-<section class="ficha-hero">
+<section class="p-hero">
+  <div class="blob blob-rojo blob-shape" style="width:300px; height:300px; top:-90px; left:-80px;"></div>
   <div class="wrap">
     <span class="eyebrow">Hablemos</span>
-    <h1>Contacto</h1>
-    <p style="max-width:600px; color:#C9C6BD; margin-top:16px;">Escríbenos para cotizaciones, distribución en tu ferretería o asesoría técnica para tu obra.</p>
+    <h1 style="margin-top:12px;">Contacto</h1>
+    <p style="max-width:560px; color:var(--gris); margin:16px auto 0;">Escríbenos para cotizaciones, distribución en tu ferretería o asesoría técnica para tu obra.</p>
   </div>
 </section>
 
-<section class="section-hueso">
+<section class="section-tight">
   <div class="wrap contact-grid">
-    <div>
-      <h3 style="margin-bottom:24px;">Escríbenos</h3>
+    <div class="contact-card">
+      <h3 style="margin-bottom:22px;">Escríbenos</h3>
       <form id="contactForm" action="mailto:ventas@koratexmorteroseco.com" method="post" enctype="text/plain">
         <div class="field">
           <label for="nombre">Nombre completo</label>
@@ -61,47 +67,38 @@
           <label for="mensaje">Mensaje</label>
           <textarea id="mensaje" name="mensaje" required placeholder="Cuéntanos sobre tu proyecto u obra..."></textarea>
         </div>
-        <button type="submit" class="btn btn-rojo">Enviar mensaje</button>
+        <button type="submit" class="btn btn-primary btn-block">Enviar mensaje</button>
       </form>
     </div>
 
-    <div>
-      <h3 style="margin-bottom:24px;">Datos de contacto</h3>
-      <div class="contact-info-item">
-        <span class="eyebrow">Teléfonos</span>
-        <div class="val">(0244) 334.33.23 · 334.36.43</div>
-      </div>
-      <div class="contact-info-item">
-        <span class="eyebrow">Correo</span>
-        <div class="val">ventas@koratexmorteroseco.com</div>
-      </div>
-      <div class="contact-info-item">
-        <span class="eyebrow">Instagram</span>
-        <div class="val">@koratexve</div>
-      </div>
-      <div class="contact-info-item">
-        <span class="eyebrow">Ubicación</span>
-        <div class="val">Las Tejerías, estado Aragua, Venezuela</div>
-      </div>
-      <a href="https://wa.me/584243343323" class="btn btn-verde" style="margin-top:10px;">Escribir por WhatsApp</a>
+    <div class="contact-card">
+      <h3 style="margin-bottom:10px;">Datos de contacto</h3>
+      <div class="info-row"><span class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><div><span class="lbl">Teléfonos</span><div class="val">(0244) 334.33.23 · 334.36.43</div></div></div>
+      <div class="info-row"><span class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></span><div><span class="lbl">Correo</span><div class="val">ventas@koratexmorteroseco.com</div></div></div>
+      <div class="info-row"><span class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="6"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></span><div><span class="lbl">Instagram</span><div class="val">@koratexve</div></div></div>
+      <div class="info-row"><span class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><div><span class="lbl">Ubicación</span><div class="val">Las Tejerías, estado Aragua, Venezuela</div></div></div>
+      <a href="https://wa.me/584243343323" class="btn btn-verde btn-block" style="margin-top:20px;">Escribir por WhatsApp</a>
     </div>
   </div>
 </section>
 
-<footer class="site-footer">
+<footer class="footer">
   <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <div class="logo"><svg class="logo-mark" width="42" height="42" viewBox="0 0 100 100" role="img" aria-label="Isotipo KORATEX"><rect width="100" height="100" rx="24" fill="#141412"/><path d="M22 78 L46 22" stroke="#E4362B" stroke-width="13" stroke-linecap="round"/><path d="M54 22 L78 78" stroke="#1E5631" stroke-width="13" stroke-linecap="round"/><path d="M22 78 L78 78" stroke="#F6F3EE" stroke-width="9" stroke-linecap="round"/></svg><span class="logo-text">KORA<span>TEX</span></span></div>
-        <p class="tagline">Desarrollamos y producimos soluciones tecnológicas de alto rendimiento para la construcción. Construimos con calidad, respaldamos con compromiso.</p>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <svg class="brand-mark" width="40" height="40" viewBox="0 0 100 100" role="img" aria-label="Isotipo KORATEX"><rect width="100" height="100" rx="26" fill="#141412"/><path d="M22 78 L46 22" stroke="#E4362B" stroke-width="13" stroke-linecap="round"/><path d="M54 22 L78 78" stroke="#1E5631" stroke-width="13" stroke-linecap="round"/><path d="M22 78 L78 78" stroke="#F6F3EE" stroke-width="9" stroke-linecap="round"/></svg>
+          <span class="brand-word">KORATEX</span>
+        </a>
+        <p>Desarrollamos y producimos soluciones tecnológicas de alto rendimiento para la construcción. Construimos con calidad, respaldamos con compromiso.</p>
       </div>
       <div>
         <h4>Navegación</h4>
         <ul>
-          <li><a href="./index.html">Inicio</a></li>
-          <li><a href="./productos.html">Productos</a></li>
-          <li><a href="./nosotros.html">Nosotros</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </div>
       <div>
@@ -110,16 +107,21 @@
           <li>(0244) 334.33.23 · 334.36.43</li>
           <li>ventas@koratexmorteroseco.com</li>
           <li>koratexmorteroseco.com</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <ul>
           <li>Instagram @koratexve</li>
         </ul>
       </div>
     </div>
-    <div class="bottom">
+    <div class="footer-bottom">
       <span>Hecho en Venezuela · Para obras que perduran</span>
       <span>© 2026 KORATEX — Mortero Seco, C.A. · J-30805882-3</span>
     </div>
   </div>
 </footer>
-<script src="js/main.js?v=3"></script>
+<script src="js/main.js?v=4"></script>
 </body>
 </html>
