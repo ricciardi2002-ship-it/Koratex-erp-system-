@@ -514,7 +514,8 @@ section { padding: 84px 0; position: relative; overflow: hidden; }
 }
 @media (max-width: 860px) { .footer-inner { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .footer-inner { grid-template-columns: 1fr; } }
-.footer-brand .brand { margin-bottom: 14px; }
+.footer-logo { display: inline-block; margin-bottom: 16px; }
+.footer-logo img { width: 160px; height: auto; display: block; }
 .footer-brand p { color: var(--gris); max-width: 300px; font-size: 0.9rem; }
 .footer h4 { font-family: 'Nunito Sans', sans-serif; font-size: 0.74rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 16px; color: var(--gris-claro); font-weight: 800; }
 .footer ul { list-style: none; }
